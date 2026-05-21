@@ -1,0 +1,63 @@
+name: Lyric Request
+description: Request a new lyric experiment
+title: "[Request] "
+labels: ["request"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for requesting a new lyric experiment.
+        Please fill in the required information below.
+
+  - type: input
+    id: song-title
+    attributes:
+      label: Song Title
+      description: Write the song title.
+      placeholder: Example: Night Dancer
+    validations:
+      required: true
+
+  - type: input
+    id: artist-name
+    attributes:
+      label: Artist Name
+      description: Write the artist name.
+      placeholder: Example: imase
+    validations:
+      required: true
+
+  - type: input
+    id: song-link
+    attributes:
+      label: Song Link
+      description: Add a link to the song if available.
+      placeholder: Example: YouTube, Spotify, or other source
+    validations:
+      required: false
+
+  - type: dropdown
+    id: preferred-language
+    attributes:
+      label: Preferred Code Language
+      description: Choose the preferred language for the lyric experiment.
+      options:
+        - No preference
+        - Python
+        - JavaScript
+        - Go
+        - Rust
+        - C++
+        - Other
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Add any extra notes, such as preferred effect, timing style, or language.
+      placeholder: Example: Typing effect, slow intro, dual language lyrics, etc.
+    validations:
+      required: false

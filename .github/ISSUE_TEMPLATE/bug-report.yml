@@ -1,0 +1,68 @@
+name: Bug Report
+description: Report a problem with an existing lyric experiment
+title: "[Bug] "
+labels: ["bug"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug.
+        Please fill in the required information so the problem can be checked faster.
+
+  - type: input
+    id: track-folder
+    attributes:
+      label: Track Folder
+      description: Write the track folder where the bug happened.
+      placeholder: Example: tracks/001-shitsunaikei-trackmaker
+    validations:
+      required: true
+
+  - type: input
+    id: command
+    attributes:
+      label: Command Used
+      description: Write the command you used to run the project.
+      placeholder: Example: python3 main.py
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: What Happened?
+      description: Explain the bug clearly.
+      placeholder: Example: The lyrics stop after the second line.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Write the steps to reproduce the bug.
+      placeholder: |
+        1. Open the track folder
+        2. Run the command
+        3. See the error
+    validations:
+      required: true
+
+  - type: textarea
+    id: error-output
+    attributes:
+      label: Error Output
+      description: Paste the error message or terminal output if available.
+      render: shell
+    validations:
+      required: false
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Write your OS, terminal, or runtime version if available.
+      placeholder: Example: Kali Linux, Python 3.12, GNOME Terminal
+    validations:
+      required: false
