@@ -64,7 +64,7 @@ Check the `README.md` inside each track folder for specific instructions.
 
 ## Request a Lyric
 
-Anyone can request a new lyric by opening an issue.
+Anyone can request a new lyric by opening an [issue](https://github.com/Ridhsuki/terminal-lyrics-lab/issues).
 
 Please include:
 
