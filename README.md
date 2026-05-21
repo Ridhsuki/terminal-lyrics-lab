@@ -9,6 +9,6 @@ Currently displaying the lyrics of "Fashion center - TrackMaker" in your termina
 
 ```bash
 git clone https://github.com/Ridhsuki/terminal-lyrics-lab.git
-cd tracks/001-shitsunaikei-trackmaker
+cd terminal-lyrics-lab/tracks/001-shitsunaikei-trackmaker
 python3 index.py
 ```
